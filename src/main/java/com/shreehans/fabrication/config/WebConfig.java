@@ -14,7 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")   // sab endpoints
-                        .allowedOrigins("http://localhost:4200")  // Angular
+                        .allowedOrigins("https://shreehansfabrication.netlify.app")  // Angular
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
