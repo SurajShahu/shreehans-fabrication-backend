@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@CrossOrigin(origins = "https://shreehansfabrication.netlify.app") // Aapka frontend port
+@CrossOrigin(origins = {
+        "https://www.shreehansfabrication.com",
+        "https://shreehansfabrication.netlify.app"
+}) // Aapka frontend port
 @RestController
 @RequestMapping("/admin")
 public class AdminController {

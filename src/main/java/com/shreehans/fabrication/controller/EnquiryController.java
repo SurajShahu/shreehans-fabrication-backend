@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@CrossOrigin(origins = "https://shreehansfabrication.netlify.app")
+@CrossOrigin(origins = {
+        "https://www.shreehansfabrication.com",
+        "https://shreehansfabrication.netlify.app"
+})
 @RestController
 @RequestMapping("/api")
 public class EnquiryController {

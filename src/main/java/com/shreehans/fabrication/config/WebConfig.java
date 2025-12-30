@@ -14,9 +14,11 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")   // sab endpoints
-                        .allowedOrigins("https://shreehansfabrication.netlify.app")  // Angular
+                        .allowedOrigins("https://shreehansfabrication.netlify.app",
+                                "https://www.shreehansfabrication.com")  // Angular
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
             }
         };
     }
